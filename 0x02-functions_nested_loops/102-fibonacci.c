@@ -8,17 +8,17 @@
 int main(void)
 {
 	int n = 50; /* Number of Fibonacci numbers to be printed */
-	int first = 1;
-	int second = 2;
-	int next;
+	long int first = 1;
+	long int second = 2;
+	long  int next;
 	int i;
 
-	printf("%d, %d", first, second);
+	printf("%ld, %ld", first, second);
 
 	for (i = 3; i <= n; i++)
 	{
 		next = first + second;
-		printf(", %d", next);
+		printf(", %ld", next);
 	/* uptdate values for the next iteration */
 	first = second;
 	second = next;
