@@ -14,9 +14,9 @@ int _atoi(char *s)
 
 	while (s[c])
 	{
-		if (s[c] == 45)
-			sign = -1;
-		while (s[c] >= 48 && s[c] <= 57)
+		if (s[c] == '-')
+			sign *= -1;
+		while (s[c] >= '0' && s[c] <= '9')
 		{
 			isNumeric = 1;
 			num = (num * 10) + (s[c] - '0');
