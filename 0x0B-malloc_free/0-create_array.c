@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * create_array - creates an array of chars, 
+ * create_array - creates an array of chars,
  * and initializes it with a specific char
  * @size: the number elements in the array to be created
  * @c: the variable to be stored
@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	arrayPtr = malloc(size * sizeof(char));
 	/* Check if memory allocation if successful */
 	if (arrayPtr == NULL)
-		return (NULL); 
+		return (NULL);
 	for (count = 0; count < size; count++)
 		arrayPtr[count] = c;
 	return (arrayPtr);
