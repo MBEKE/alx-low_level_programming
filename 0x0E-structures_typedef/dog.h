@@ -15,22 +15,8 @@ struct dog
 	float age;
 	char *owner;
 };
-
+typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
-/**
- * struct dog - creates elements of a dog.
- * @name: First member.
- * @age: Second member.
- * @owner: Third member.
- *
- * Description: The structure shows the dogs name, its age and owner
- */
-typedef struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-}dog_t;
 
 void print_dog(struct dog *d);
 
