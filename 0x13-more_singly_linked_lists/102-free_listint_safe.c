@@ -9,7 +9,7 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_int *current = *h;
+	listint_t *current = *h;
 	listint_t *next_node;
 	size_t node_count = 0; /* counter to track the no. of nodes freed */
 
