@@ -45,7 +45,7 @@ void print_all(const char * const format, ...)
 	va_end(args);
 }
 
-/* Helper function implementations */
+/* Helper function implementations  22 */
 void print_char(va_list args)
 {
 	printf("%c", va_arg(args, int));
